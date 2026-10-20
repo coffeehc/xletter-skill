@@ -42,6 +42,8 @@ Repository: [coffeehc/xletter-skill](https://github.com/coffeehc/xletter-skill).
 
 ClawHub version [0.1.0 is published](https://clawhub.ai/coffeehc/skills/xletter). The [security audit](https://clawhub.ai/coffeehc/skills/xletter/security-audit) reports Pass for version 0.1.0, audited on 2026-10-20 at 06:55 UTC. The public listing and all three distributed files were verified without authentication on 2026-10-20. An audit pass is not a guarantee of safety.
 
+AgentSkillHub: [xLetter](https://agentskillhub.dev/u/coffeehc/sk/xletter), version `2026.10.20`, imported from source commit `7ade369`. Its listing shows `npx skhub add coffeehc/xletter`. The public import and details were verified; this CLI command has not been tested. AgentSkillHub uses its own date-based version, separate from ClawHub `0.1.0` and public-contract `v1`.
+
 The public contract's `v1` label is separate from distribution version `0.1.0`. OpenClaw runtime execution and live mail delivery have not been tested; the completed installation smoke test used the Skills CLI targeting Codex.
 
 ## License

@@ -8,6 +8,10 @@ Prepared the xletter Skill folder from the live public contract, preserving its 
 
 The public distribution repository is [coffeehc/xletter-skill](https://github.com/coffeehc/xletter-skill). No private server code is included. The owner approved MIT-0 licensing for this public Skill documentation package only. Added the canonical license text at the repository root and inside the standalone Skill folder; the license does not cover the backend or hosted service. ClawHub publication, anonymous public listing access, and download/hash verification of all three bundle files are complete. The security audit reports Pass for 0.1.0 (2026-10-20 06:55 UTC). No install count, registration count, or runtime certification is claimed.
 
+## AgentSkillHub distribution · 2026-10-20
+
+[xLetter is listed on AgentSkillHub](https://agentskillhub.dev/u/coffeehc/sk/xletter) as version `2026.10.20`, imported from source commit `7ade369`. The public import and listing details were verified. The displayed install command is `npx skhub add coffeehc/xletter`; it has not been executed or tested. This date-based registry version is independent of ClawHub `0.1.0` and public-contract `v1`. No Skill bundle content changed for this documentation update.
+
 ## For subsequent releases
 
 - MIT-0 licensing for this documentation package is approved. Preserve the license and its documentation-only scope in the published bundle.
