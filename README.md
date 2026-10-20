@@ -36,7 +36,11 @@ Repository: [coffeehc/xletter-skill](https://github.com/coffeehc/xletter-skill).
 
 ClawHub publication and registry listing verification are pending. No registry release version or installation certification is claimed. The public contract's `v1` label is not a package release version.
 
-No LICENSE has been added. ClawHub publication requires a separate licensing decision: its [license policy](https://docs.openclaw.ai/clawhub/skill-format#license) requires MIT-0 for published Skills. This repository does not claim that approval has been given.
+## License
+
+The documentation and examples distributed in this repository are licensed under [MIT No Attribution (MIT-0)](LICENSE), as authorized by the project owner. This allows commercial use, modification, and redistribution without an attribution requirement. The same license is included in the standalone Skill folder.
+
+This grant covers this public Skill documentation package only. It does not license xLetter server code, credentials, private data, or the hosted service. ClawHub publication remains pending; license approval does not mean a registry release has occurred.
 
 ## Source and validation
 

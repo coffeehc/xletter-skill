@@ -8,7 +8,7 @@
 
 The source snapshot is byte-for-byte unchanged. The packaged SKILL.md begins with that complete unchanged source, then adds one “Distribution and runtime notes” section. Additions clarify instruction-only packaging, no automatic registration, platform approval boundaries, HTTPS token-origin handling, and an optional reference to dry-run examples. No API path, HTTP method, request field, response envelope, service limit, cost, uptime guarantee, or token recovery mechanism has been invented.
 
-Supporting documents and examples are new packaging material. They do not modify the live source, expand authorization, confer a license, or claim a released package. No backend repository was inspected.
+Supporting documents and examples are new packaging material. They do not modify the live source, expand runtime authorization, or claim a released package. The owner separately approved MIT-0 licensing of the public Skill documentation package; see the included LICENSE files. No backend repository was inspected.
 
 Format sources consulted on 2026-10-20:
 - https://agentskills.io/specification
@@ -16,3 +16,5 @@ Format sources consulted on 2026-10-20:
 - https://docs.openclaw.ai/clawhub/publishing
 
 These sources describe packaging requirements, not permission to publish this package. Recheck current requirements before actual publication.
+
+License text source, retrieved 2026-10-20: https://raw.githubusercontent.com/spdx/license-list-data/main/text/MIT-0.txt . Only the copyright template was replaced with `Copyright (c) 2026 coffeehc`; the grant and disclaimer are unchanged. The repository and Skill-folder license copies are identical. SPDX identifier reference: https://spdx.org/licenses/MIT-0.html .

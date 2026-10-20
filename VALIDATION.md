@@ -9,16 +9,16 @@ Candidate date: 2026-10-20 UTC. Scope: documentation-only distribution preparati
 - Skill creator's quick validator: `Skill is valid!`
 - YAML frontmatter parses; name matches `xletter`, description is nonempty and within the specification's bound, and metadata preserves `public_contract: v1` as a string.
 - Local Markdown reference targets resolve. JSON code blocks parse. Intentional substitution markers remain clearly identified as examples, not real credentials or addresses.
-- Package tree contains Markdown documents only, no symlinks, executable helpers, dependency installers, hooks, or SDK requirements. No unfinished scaffold markers or private-key blocks were found.
+- Package tree contains Markdown documents and plain-text LICENSE files only, no symlinks, executable helpers, dependency installers, hooks, or SDK requirements. No unfinished scaffold markers or private-key blocks were found.
 - Manual review: no real token or personal/business data is present. Token examples use placeholders. No backend source was inspected. All documented API operations already appear in the public contract.
 - Behavioral review preserves adoption without a preselected recipient, reuse of identity, private credential storage, permission-aware registration and outreach, receive marking messages as read, accepted-versus-read distinction, no guaranteed reply, no push notifications, safe handling of uncertain outcomes, and untrusted inbound content.
-- No LICENSE file or license frontmatter was added; no copyright grant or registry terms acceptance occurred.
+- After explicit owner approval, added MIT-0 LICENSE files at the repository root and Skill root. The canonical grant and disclaimer are unchanged. No registry publication occurred.
 
 ## Compatibility assessment
 
 Static format review against the [Agent Skills specification](https://agentskills.io/specification) passes the required folder/frontmatter conventions. The Skill uses portable text guidance and HTTPS instead of a runtime-specific SDK, executable, or invented credential variable.
 
-The [ClawHub format documentation](https://docs.openclaw.ai/clawhub/skill-format) supports a Skill folder with SKILL.md and supporting files. The folder structure is suitable for submission, but registry acceptance has not been tested. Its GitHub import requires an owned public non-fork repository. Its MIT-0 licensing requirement remains an owner decision, not a technical check that this package can satisfy silently.
+The [ClawHub format documentation](https://docs.openclaw.ai/clawhub/skill-format) supports a Skill folder with SKILL.md and supporting files. The folder structure is suitable for submission, but registry acceptance has not been tested. Its GitHub import requires an owned public non-fork repository. The owner has approved MIT-0 licensing for this documentation package; that does not establish registry acceptance.
 
 ## Not performed
 
@@ -31,7 +31,7 @@ The [ClawHub format documentation](https://docs.openclaw.ai/clawhub/skill-format
 
 ## Release blockers
 
-The public distribution destination is coffeehc/xletter-skill. Distribution licensing (MIT-0 if ClawHub) and registry publication remain pending. Publisher authentication, slug availability, and semver selection must be verified at release time. Public-contract v1 is not a package release version. Recheck the live document before releasing to avoid distributing stale API guidance.
+The public distribution destination is coffeehc/xletter-skill. MIT-0 licensing is approved for this public documentation package only. Registry publication remains pending. Publisher authentication, slug availability, and semver selection must be verified at release time. Public-contract v1 is not a package release version. Recheck the live document before releasing to avoid distributing stale API guidance.
 
 
 ## Public distribution and isolated installation smoke test
@@ -58,4 +58,13 @@ Both installed Skill files match the public source by SHA-256:
 - SKILL.md: `c1ced1d297f51fae2f5a783d87fabb0805042e8cbf63f1063e3738e3740356fa`
 - references/examples.md: `4f22f00508c010c32d9e194e57e516211a60ccd7afeabaeefefdf4bbfd03478c`
 
-The CLI lock metadata records source `coffeehc/xletter-skill`, source type `github`, and Skill path `skills/xletter/SKILL.md`. No mailbox API request, registration, credential creation, message send/receive, or scheduling action was performed. The test did not launch an Agent to execute the Skill, test other hosts, validate a ClawHub listing, or grant a distribution license.
+The CLI lock metadata records source `coffeehc/xletter-skill`, source type `github`, and Skill path `skills/xletter/SKILL.md`. No mailbox API request, registration, credential creation, message send/receive, or scheduling action was performed. The test did not launch an Agent to execute the Skill, test other hosts, validate a ClawHub listing, or itself grant a distribution license. MIT-0 licensing was approved separately afterward.
+
+
+## Licensing update after installation verification
+
+The owner approved MIT-0 for the public Skill documentation and examples. Added identical LICENSE files at the repository root and `skills/xletter/LICENSE`, using the canonical [SPDX MIT-0 text](https://spdx.org/licenses/MIT-0.html). The grant/disclaimer text is unchanged; only the copyright template uses the repository owner handle coffeehc and year 2026.
+
+License scope is documented in README.md: this public documentation package only, not the server implementation, hosted service, credentials, or private data. No backend source is present. The proposed first registry version is 0.1.0, distinct from public-contract v1, and remains unpublished.
+
+The earlier installation test applies to the two Skill content files at its recorded commit. Those files remain byte-identical. The added LICENSE is a plain-text packaging addition; the revised licensed bundle has passed static checks but has not been reinstalled from a published commit yet.
