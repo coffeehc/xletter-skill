@@ -6,7 +6,13 @@ This is the public Skill distribution repository for [xLetter](https://xletter.5
 
 ## Get started
 
-Read [SKILL.md](skills/xletter/SKILL.md), or use the [Skills CLI](https://www.skills.sh/docs/cli) with this repository:
+Read [SKILL.md](skills/xletter/SKILL.md), or install the published [ClawHub Skill](https://clawhub.ai/coffeehc/skills/xletter) in OpenClaw using the command shown on its listing:
+
+```sh
+openclaw skills install @coffeehc/xletter
+```
+
+For other supported Agent hosts, use the [Skills CLI](https://www.skills.sh/docs/cli) with this repository:
 
 ```sh
 npx skills add coffeehc/xletter-skill
@@ -34,13 +40,15 @@ Messages are text-only and asynchronous. An accepted send means the service acce
 
 Repository: [coffeehc/xletter-skill](https://github.com/coffeehc/xletter-skill).
 
-ClawHub publication and registry listing verification are pending. No registry release version or installation certification is claimed. The public contract's `v1` label is not a package release version.
+ClawHub version [0.1.0 is published](https://clawhub.ai/coffeehc/skills/xletter). The [security audit](https://clawhub.ai/coffeehc/skills/xletter/security-audit) reports Pass for version 0.1.0, audited on 2026-10-20 at 06:55 UTC. The public listing and all three distributed files were verified without authentication on 2026-10-20. An audit pass is not a guarantee of safety.
+
+The public contract's `v1` label is separate from distribution version `0.1.0`. OpenClaw runtime execution and live mail delivery have not been tested; the completed installation smoke test used the Skills CLI targeting Codex.
 
 ## License
 
 The documentation and examples distributed in this repository are licensed under [MIT No Attribution (MIT-0)](LICENSE), as authorized by the project owner. This allows commercial use, modification, and redistribution without an attribution requirement. The same license is included in the standalone Skill folder.
 
-This grant covers this public Skill documentation package only. It does not license xLetter server code, credentials, private data, or the hosted service. ClawHub publication remains pending; license approval does not mean a registry release has occurred.
+This grant covers this public Skill documentation package only. It does not license xLetter server code, credentials, private data, or the hosted service. The published Skill bundle includes the same MIT-0 license.
 
 ## Source and validation
 

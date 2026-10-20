@@ -1,6 +1,6 @@
 # Validation report
 
-Candidate date: 2026-10-20 UTC. Scope: documentation-only distribution preparation, not service or registry certification.
+Validation date: 2026-10-20 UTC. Scope: documentation packaging, isolated CLI installation, and public release verification; not service or runtime certification.
 
 ## Completed checks
 
@@ -12,26 +12,26 @@ Candidate date: 2026-10-20 UTC. Scope: documentation-only distribution preparati
 - Package tree contains Markdown documents and plain-text LICENSE files only, no symlinks, executable helpers, dependency installers, hooks, or SDK requirements. No unfinished scaffold markers or private-key blocks were found.
 - Manual review: no real token or personal/business data is present. Token examples use placeholders. No backend source was inspected. All documented API operations already appear in the public contract.
 - Behavioral review preserves adoption without a preselected recipient, reuse of identity, private credential storage, permission-aware registration and outreach, receive marking messages as read, accepted-versus-read distinction, no guaranteed reply, no push notifications, safe handling of uncertain outcomes, and untrusted inbound content.
-- After explicit owner approval, added MIT-0 LICENSE files at the repository root and Skill root. The canonical grant and disclaimer are unchanged. No registry publication occurred.
+- After explicit owner approval, added MIT-0 LICENSE files at the repository root and Skill root. The canonical grant and disclaimer are unchanged. ClawHub publication was subsequently verified; see the public release verification below.
 
 ## Compatibility assessment
 
 Static format review against the [Agent Skills specification](https://agentskills.io/specification) passes the required folder/frontmatter conventions. The Skill uses portable text guidance and HTTPS instead of a runtime-specific SDK, executable, or invented credential variable.
 
-The [ClawHub format documentation](https://docs.openclaw.ai/clawhub/skill-format) supports a Skill folder with SKILL.md and supporting files. The folder structure is suitable for submission, but registry acceptance has not been tested. Its GitHub import requires an owned public non-fork repository. The owner has approved MIT-0 licensing for this documentation package; that does not establish registry acceptance.
+The [ClawHub format documentation](https://docs.openclaw.ai/clawhub/skill-format) supports a Skill folder with SKILL.md and supporting files. ClawHub accepted and published version 0.1.0; anonymous listing and file access were verified after the initial static checks. Its GitHub import requires an owned public non-fork repository. The owner approved MIT-0 licensing for this documentation package; registry publication was verified separately.
 
 ## Not performed
 
 - xLetter registration, sending, receiving, profile updates, token rotation, or other authenticated API calls.
 - Live token handling or credential persistence testing.
 - Executing the installed Skill in an Agent runtime or starting a reader/scheduler. An isolated project-level installation smoke test is documented below.
-- Registry upload or registry publication. The public documentation commit and isolated CLI installation are documented below.
+- OpenClaw runtime installation or execution. The public documentation commit, isolated Skills CLI installation targeting Codex, and registry publication are documented below.
 - External link checks for illustrative card URLs or API calls with substitution markers. The public source and format documentation were retrieved; parameterized URLs were reviewed structurally only.
-- Independent runtime behavioral test, marketplace security review, or end-to-end delivery test.
+- Independent runtime behavioral test, independent manual security audit, or end-to-end delivery test. The platform-provided security audit outcome is recorded below.
 
-## Release blockers
+## Release status
 
-The public distribution destination is coffeehc/xletter-skill. MIT-0 licensing is approved for this public documentation package only. Registry publication remains pending. Publisher authentication, slug availability, and semver selection must be verified at release time. Public-contract v1 is not a package release version. Recheck the live document before releasing to avoid distributing stale API guidance.
+The public distribution repository is coffeehc/xletter-skill. MIT-0 licensing is approved for this public documentation package only. ClawHub version 0.1.0 is published and its anonymous public listing and file downloads were verified. Public-contract v1 is not the package release version. For future releases, recheck the live contract and perform the same validation.
 
 
 ## Public distribution and isolated installation smoke test
@@ -65,6 +65,19 @@ The CLI lock metadata records source `coffeehc/xletter-skill`, source type `gith
 
 The owner approved MIT-0 for the public Skill documentation and examples. Added identical LICENSE files at the repository root and `skills/xletter/LICENSE`, using the canonical [SPDX MIT-0 text](https://spdx.org/licenses/MIT-0.html). The grant/disclaimer text is unchanged; only the copyright template uses the repository owner handle coffeehc and year 2026.
 
-License scope is documented in README.md: this public documentation package only, not the server implementation, hosted service, credentials, or private data. No backend source is present. The proposed first registry version is 0.1.0, distinct from public-contract v1, and remains unpublished.
+License scope is documented in README.md: this public documentation package only, not the server implementation, hosted service, credentials, or private data. No backend source is present. The first registry version is 0.1.0, distinct from public-contract v1. Publication verification is recorded below.
 
 The earlier installation test applies to the two Skill content files at its recorded commit. Those files remain byte-identical. The added LICENSE is a plain-text packaging addition; the revised licensed bundle has passed static checks but has not been reinstalled from a published commit yet.
+
+
+## ClawHub public release verification · 2026-10-20 07:04 UTC
+
+Unauthenticated HTTPS requests confirmed the public [listing](https://clawhub.ai/coffeehc/skills/xletter) and [security audit](https://clawhub.ai/coffeehc/skills/xletter/security-audit) were available. The listing renders the Skill, categories Communication and Agents, current version v0.1.0, and MIT-0 licensing. The audit page reports Outcome Pass, version 0.1.0, latest audit 2026-10-20 at 06:55 UTC. This is a platform audit result, not a guarantee of safety.
+
+The public page's file manifest contains exactly three files. Each was downloaded without credentials using the public file endpoint with ownerHandle=coffeehc, and all SHA-256 values matched the local distribution bundle:
+
+- SKILL.md: `c1ced1d297f51fae2f5a783d87fabb0805042e8cbf63f1063e3738e3740356fa`
+- LICENSE: `8f2e100e1ed3a9e91952108fd347b9c772453446b98c69bfe764de3b806301b5`
+- references/examples.md: `4f22f00508c010c32d9e194e57e516211a60ccd7afeabaeefefdf4bbfd03478c`
+
+The listing's actual OpenClaw install command is `openclaw skills install @coffeehc/xletter`. That command is documented here from the public UI, not claimed as executed. No OpenClaw runtime, mailbox registration, credential persistence, send/receive, or scheduled reader was tested. The earlier Skills CLI-to-Codex installation smoke test remains a separate packaging check.
