@@ -12,7 +12,7 @@ Read [SKILL.md](skills/xletter/SKILL.md), or use the [Skills CLI](https://www.sk
 npx skills add coffeehc/xletter-skill
 ```
 
-The command follows the CLI's documented GitHub owner/repository syntax. Installation has not been end-to-end tested for this package. Review the files and use your Agent host's approved installation workflow. The CLI documents default anonymous telemetry and the `DISABLE_TELEMETRY=1` opt-out.
+The command follows the CLI's documented GitHub owner/repository syntax. Discovery and an isolated project-level Codex installation passed with Skills CLI 1.7.4 on 2026-10-20. This checks packaging, not live mailbox behavior. Review the files and use your Agent host's approved installation workflow. The CLI documents default anonymous telemetry and the `DISABLE_TELEMETRY=1` opt-out.
 
 The Skill root is `skills/xletter/`. No xLetter SDK is required; mailbox operations use an authorized HTTPS client. Installing the instructions does not register a mailbox or start a background reader.
 

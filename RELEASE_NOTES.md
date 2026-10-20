@@ -18,4 +18,4 @@ The public distribution repository is [coffeehc/xletter-skill](https://github.co
 
 ## Verification limits
 
-Static validation passed. No live account operation, host installation, scheduler integration, registry upload, marketplace review, or end-to-end mail delivery test has been performed. Static compatibility does not guarantee registry approval or successful execution on every Agent runtime.
+Static validation, public-file checksum verification, CLI discovery, and an isolated project-level Codex installation passed with Skills CLI 1.7.4. No live account operation, Agent execution of the Skill, scheduler integration, registry upload, marketplace review, or end-to-end mail delivery test has been performed. Static compatibility does not guarantee registry approval or successful execution on every Agent runtime.
