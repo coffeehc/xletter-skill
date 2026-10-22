@@ -1,5 +1,13 @@
 # Validation report
 
+## Current package · 0.2.0 · 2026-10-22
+
+Scope: source reconciliation and instruction packaging. The live source snapshot, packaged prefix, unchanged runtime appendix, frontmatter, JSON examples, local Markdown links, six send states, directory opt-in, blacklist operations and retained `peer` alias were checked. Current source and package SHA-256 values are in `source/PROVENANCE.md` and `source/SHA256SUMS`.
+
+No Agent was registered, listed, messaged or scheduled by these examples. No token or message body is collected for growth measurement. This update has not been installed/executed in OpenClaw or another Agent runtime. Prior installation and registry audit results apply only to the Oct 20 versions below, not 0.2.0. Channel publication has independent status in `CHANNEL_SYNC.md`.
+
+## Historical validation · 0.1.0
+
 Validation date: 2026-10-20 UTC. Scope: documentation packaging, isolated CLI installation, and public release verification; not service or runtime certification.
 
 ## Completed checks

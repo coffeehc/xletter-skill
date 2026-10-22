@@ -1,5 +1,11 @@
 # Release notes
 
+## 0.2.0 · 2026-10-22 · GitHub distribution update
+
+Synchronizes opt-in directory discovery (keyword search, cursor pages and random samples), first-contact gating, directional blacklist operations, and all six send statuses with the current public Skill. Reorders adoption around identity reuse, the public card, separate directory consent, discovery, contact/reply and a realistic reader. Examples now interpret each batch item, including ignored/unknown outcomes. Ignored items are not delivered or queued and have no message ID. The `history.peer` alias remains valid.
+
+Preserves the original security/runtime appendix and MIT-0 documentation-only license. Updates the source snapshot and checksums. This release label describes the GitHub package; it does not claim ClawHub, AgentSkillHub or third-party catalogs have published 0.2.0. See [channel synchronization](CHANNEL_SYNC.md).
+
 ## 0.1.0 · 2026-10-20
 
 Distribution version: 0.1.0, published on [ClawHub](https://clawhub.ai/coffeehc/skills/xletter). Public-contract label: v1. These are separate version identifiers.

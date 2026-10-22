@@ -1,20 +1,19 @@
 # Public-source provenance
 
+## Current source · 2026-10-22
+
 - Source: https://xletter.51apis.com/skill.md
-- Retrieved: 2026-10-20 UTC, by HTTPS GET.
-- Snapshot: `live-skill-2026-10-20.md`.
-- SHA-256: `52ce2cfc6d9d64c98314133283267bcb01fdb69a08f8d89cf842f7cd3cd61ece`.
-- Source metadata: `public_contract: "v1"`; this is an API/public-contract label, not a package release number.
+- Snapshot: `live-skill-2026-10-22.md`.
+- SHA-256: `f6de98654569bf17576157d7aa39f9f5e3992747f8b3397efbda735e0f37705e`.
+- Source metadata: `public_contract: "v1"`; this is the API contract label, independent of package `0.2.0`.
+- The reordered canonical source was reconciled against the Oct 22 online Skill and current xLetter API implementation. Published as online Skill revision 15 on 2026-10-22; an anonymous HTTPS GET matched this snapshot byte-for-byte before the distribution update. xLetter source commit: `a17911f680a3d4c540ccf718f81150aa5b1e1106`.
 
-The source snapshot is byte-for-byte unchanged. The packaged SKILL.md begins with that complete unchanged source, then adds one “Distribution and runtime notes” section. Additions clarify instruction-only packaging, no automatic registration, platform approval boundaries, HTTPS token-origin handling, and an optional reference to dry-run examples. No API path, HTTP method, request field, response envelope, service limit, cost, uptime guarantee, or token recovery mechanism has been invented.
+The packaged `skills/xletter/SKILL.md` begins with the complete source snapshot, followed by the unchanged distribution/runtime appendix from 0.1.0. The appendix preserves instruction-only packaging, existing authorization, HTTPS token-origin restrictions, untrusted mail handling and the examples link. No SDK, installer, scheduler or backend code was added. Public-card and directory choices remain separate. `history.peer` remains a valid alias.
 
-Supporting documents and examples are new packaging material. They do not modify the live source, expand runtime authorization, or claim a released package. The owner separately approved MIT-0 licensing of the public Skill documentation package; see the included LICENSE files. No backend repository was inspected.
+The Oct 20 source snapshot remains for audit history; its hash is `52ce2cfc6d9d64c98314133283267bcb01fdb69a08f8d89cf842f7cd3cd61ece`. Historical package checks and registry results apply only to their recorded versions.
 
-Format sources consulted on 2026-10-20:
-- https://agentskills.io/specification
-- https://docs.openclaw.ai/clawhub/skill-format
-- https://docs.openclaw.ai/clawhub/publishing
+## License and format provenance
 
-These sources describe packaging requirements, not permission to publish this package. Recheck current requirements before actual publication.
+The owner approved MIT-0 for this public documentation package only. Both LICENSE files are unchanged and identical; backend code, service and private data are outside this grant. Canonical text: https://raw.githubusercontent.com/spdx/license-list-data/main/text/MIT-0.txt (retrieved 2026-10-20; copyright template set to coffeehc, 2026).
 
-License text source, retrieved 2026-10-20: https://raw.githubusercontent.com/spdx/license-list-data/main/text/MIT-0.txt . Only the copyright template was replaced with `Copyright (c) 2026 coffeehc`; the grant and disclaimer are unchanged. The repository and Skill-folder license copies are identical. SPDX identifier reference: https://spdx.org/licenses/MIT-0.html .
+Format references from the original package: https://agentskills.io/specification and https://docs.openclaw.ai/clawhub/skill-format . Registry requirements and publisher access must be rechecked for each publication. This package does not grant publication or runtime permissions.
