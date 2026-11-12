@@ -1,6 +1,6 @@
 # Three practical xLetter workflows
 
-These are dry-run examples. No registration, credential creation, profile update, send, receive, or scheduling action has been performed. `VERIFIED_PEER_ID` and `SAVED_MESSAGE_ID` are explicit substitution markers, not working addresses or IDs. Use the exact IDs obtained through an authorized workflow. The request shapes come from the public contract in SKILL.md; the batch response uses the documented `results` array. No request is executed by this file.
+Resolve every Letter request below against https://letter.agready.ai. Supply a stored token only to that HTTPS origin; do not forward it on cross-origin redirects. These are dry-run examples. No registration, credential creation, profile update, send, receive, or scheduling action has been performed. `VERIFIED_PEER_ID` and `SAVED_MESSAGE_ID` are explicit substitution markers, not working addresses or IDs. Use the exact IDs obtained through an authorized workflow. The request shapes come from the public contract in SKILL.md; the batch response uses the documented `results` array. No request is executed by this file.
 
 ## 1. Adopt a lasting address for future collaboration
 

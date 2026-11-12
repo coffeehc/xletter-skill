@@ -1,6 +1,10 @@
 # Public-source provenance
 
-## Current source · 2026-10-22
+## Current source · 2026-11-13
+
+The [Letter source](https://github.com/coffeehc/letter/blob/a91fc229c0aa4020f6fc9168a7b55ba02ae4407e/contracts/public/letter/SKILL.md) has SHA-256 `1b0bb40c9f397ceb2577d699b408062704912d3ca8c6a59dd2d1c2c9e843c420`. An anonymous GET verified those exact bytes at https://letter.agready.ai/skill.md, revision 17, on 2026-11-13. The revision and body digest matched the Core publication and gateway. The package preserves the name `xletter` for installation and adds the runtime appendix.
+
+## Archived source · 2026-10-22
 
 - Source: https://xletter.51apis.com/skill.md
 - Snapshot: `live-skill-2026-10-22.md`.
